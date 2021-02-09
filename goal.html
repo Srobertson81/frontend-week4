@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal App</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+    <br>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label form="new-start-date">Start By</label>
+                        <input type="date" class="form-control" id="new-start-date">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label form="new-end-date">Accomplish By</label>
+                        <input type="date" class="form-control" id="new-end-date">
+                    </div>                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label form="new-task">Goal</label>
+                        <input type="text" class="form-control" id="new-task" placeholder="Goal">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button id="add" class="btn btn-primary form-control">Add Goal</button>
+            </div>
+        </div>
+    </div>
+    <table id="list" class="table table-dark table-striped">
+        <tr>
+            <th>Goal</th>
+            <th>Date Created</th>
+            <th>Start By</th>
+            <th>Accomplish By</th>
+            <th>Accomplished</th>
+        </tr>
+    </table>
+    <script src="goal.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>    
+</body>
+</html>
